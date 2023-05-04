@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com input</title>
+    <script src="https://kit.fontawesome.com/74f5d82ab4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <script src="scripto.js"></script>
+</head>
+
+<body>
+
+    <h1>Digite os números na calculadora!</h1>
+    <div id="ladoflex" class="flex">
+        <div id="caixa_calc">
+
+            <div class="wrapper" id="quadrado" style="width: 290px; height: 80px; background-color: #444444; border-radius: 15px;"></div>
+            <div id="caixas">
+                <div>
+                    <label for="input1">Número 1: </label>
+                    <input id="input1" type="number">
+                </div><br>
+
+                <div>
+                    <label for="input2"> Número 2: </label>
+                    <input id="input2" type="number">
+                </div><br>
+
+                <div>
+                    <label for="input_result"> Resultado: </label>
+                    <input id="input_result" type="number" disabled>
+                </div><br>
+            </div>
+        </div>
+
+
+
+        <div id="botoes">
+            <button class="btn" type="button" onclick="somarNum()"><i class="fas fa-plus"></i></button>
+            <button class="btn" type="button" onclick="subNum()"><i class="fas fa-minus"></i></button>
+            <button class="btn" type="button" onclick="multNum()"><i class="fas fa-x"></i></button>
+            <button class="btn" type="button" onclick="divNum()"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn" type="button" onclick="limparInputs()"><i class="fa-solid fa-c"></i></button>
+        </div>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
